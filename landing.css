@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(20, 20, 20, 0.61),rgba(0, 0, 0, 0.568)), url(./img/pic.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    color: #fff;
+    height: 20vh ;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    margin-right: 55%;
+    font-size: 23px;
+    position: fixed
+}
+
+.change_content::after {
+    content: '';
+    animation: changetext 8s infinite linear;
+    color: rgb(53, 180, 53);
+}
+
+@keyframes changetext {
+    0%{content:"LANDING";}
+    25%{content:"PAGE";}
+    35%{content:"LANDING";}
+    50%{content:"PAGE";}
+    80%{content:"LANDING";}
+    100%{content:"PAGE";}
+}
+
+.Home a {
+    border-radius: 50%;
+    color: #fff;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    margin-left: 30%;
+}
+
+.about a {
+    color: #fff;
+    padding: 10px;
+    width: 25%;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 100;
+    transition: all 0.5s ease;
+}
+
+.about a:hover {
+    color: rgb(53, 180, 53);
+    border-bottom: 2px solid rgb(53, 180, 53);
+}
+
+.world {
+    color: #fff;
+    padding: 80px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.world h1 {
+    font-size: 75px;
+}
+
+.world h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.world p {
+    padding-top: 20px;
+    width: 50%;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.Get {
+    margin-top: 30px;
+}
+
+.Get a{
+    text-decoration: none;
+    border: 1px solid #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 12px 36px;
+    border-radius: 4px;
+    color: #fff;
+    transition: 0.8s ease all;
+}
+
+.Get a:hover {
+    background-color:  rgba(255, 255, 255, 0.726);
+    color: #111;
+}
+
